@@ -12,7 +12,7 @@
 		9B4A0B2E1E767F7100FF3539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A0B2D1E767F7100FF3539 /* ViewController.swift */; };
 		9B4A0B331E767F7100FF3539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A0B321E767F7100FF3539 /* Assets.xcassets */; };
 		9B4A0B361E767F7100FF3539 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A0B341E767F7100FF3539 /* LaunchScreen.storyboard */; };
-		9B4A0B441E7680B500FF3539 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A0B431E7680B500FF3539 /* SnapshotTests.swift */; };
+		9B7C15121E77DC6C006F4492 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C15111E77DC6C006F4492 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,8 @@
 		9B4A0B351E767F7100FF3539 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B4A0B371E767F7100FF3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4A0B411E7680B500FF3539 /* SnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B4A0B431E7680B500FF3539 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 		9B4A0B451E7680B500FF3539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7C15111E77DC6C006F4492 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		F1EE6D7AC447455C4D74DB4C /* Pods-SnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapshotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapshotTests/Pods-SnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 		9B4A0B421E7680B500FF3539 /* SnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				9B4A0B431E7680B500FF3539 /* SnapshotTests.swift */,
+				9B7C15111E77DC6C006F4492 /* ViewControllerTests.swift */,
 				9B4A0B451E7680B500FF3539 /* Info.plist */,
 			);
 			path = SnapshotTests;
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4A0B441E7680B500FF3539 /* SnapshotTests.swift in Sources */,
+				9B7C15121E77DC6C006F4492 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +473,7 @@
 				9B4A0B3C1E767F7100FF3539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B4A0B481E7680B500FF3539 /* Build configuration list for PBXNativeTarget "SnapshotTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +482,7 @@
 				9B4A0B4A1E7680B500FF3539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

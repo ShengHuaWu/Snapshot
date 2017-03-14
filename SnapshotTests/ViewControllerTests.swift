@@ -1,20 +1,20 @@
 //
-//  SnapshotTests.swift
-//  SnapshotTests
+//  ViewControllerTests.swift
+//  Snapshot
 //
-//  Created by ShengHua Wu on 13/03/2017.
+//  Created by ShengHua Wu on 14/03/2017.
 //  Copyright © 2017 ShengHuaWu. All rights reserved.
 //
 
 import FBSnapshotTestCase
 @testable import Snapshot
 
-class SnapshotTests: FBSnapshotTestCase {
+class ViewControllerTests: FBSnapshotTestCase {
     // MARK: - Override Methods
     override func setUp() {
         super.setUp()
         
-        recordMode = true
+        self.recordMode = false
     }
     
     override func tearDown() {
@@ -22,10 +22,16 @@ class SnapshotTests: FBSnapshotTestCase {
     }
     
     // MARK: - Enabled Tests
-    func testViewController() {
+    func testViewControllerEmpty() {
+        let vc = ViewController()
+
+        FBSnapshotVerifyView(vc.view)
+    }
+    
+    func testViewControllerNormal() {
         let vc = ViewController()
         
-        vc.view.backgroundColor = UIColor.brown
+        vc.state = .normal(["First", "Second", "Third"])
         
         FBSnapshotVerifyView(vc.view)
     }
