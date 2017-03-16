@@ -14,7 +14,7 @@ class ViewControllerTests: FBSnapshotTestCase {
     override func setUp() {
         super.setUp()
         
-        self.recordMode = false
+        recordMode = false
     }
     
     override func tearDown() {
