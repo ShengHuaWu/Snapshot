@@ -15,7 +15,7 @@ Following the instruction on their [GitHub page](https://github.com/facebook/ios
 In addition, the recommended way to set the reference directory is to define `FB_REFERENCE_IMAGE_DIR` in my scheme.
 This should point to the directory where I want reference images to be stored.
 A sample value is `$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages`.
-![scheme-image]()
+![scheme-image](https://github.com/ShengHuaWu/Snapshot/blob/master/Resource/Scheme.png)
 It's quite handy, right? Let's start to write some code.
 
 ### Implementation
@@ -36,7 +36,7 @@ Finally, add the following two test functions in order to store the images of my
 ```
 func testViewControllerEmpty() {
     let vc = ViewController()
-    
+
     FBSnapshotVerifyView(vc.view)
 }
 
@@ -50,9 +50,9 @@ func testViewControllerNormal() {
 ```
 After finishing running, the test should fail (That's fine.) and the console output tells me the reference images are stored.
 Go to the directory that I set in the scheme and there are two images of my view controller in different states.
-![two-images]()
+![two-images](https://github.com/ShengHuaWu/Snapshot/blob/master/Resource/two-images.png)
 Thus, I'm able to actually look at the images to verify modifications of my view controller and this saves a lot of time in building.
-The sample project is [here]().
+The sample project is [here](https://github.com/ShengHuaWu/Snapshot).
 
 ### Conclusion
 _FBSnapshotTestCase_ also lets me able to do a single test and instantly see the changes I make to the different states.
